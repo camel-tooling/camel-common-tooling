@@ -29,6 +29,10 @@ import com.github.cameltooling.model.EndpointOptionModel;
 
 public final class ModelHelper {
 
+	private static final String DESCRIPTION = "description";
+	private static final String DEPRECATED = "deprecated";
+	private static final String JAVA_TYPE = "javaType";
+	
     private ModelHelper() {
         // utility class
     }
@@ -42,12 +46,12 @@ public final class ModelHelper {
         component.setAlternativeSyntax(getSafeValue("alternativeSyntax", rows));
         component.setAlternativeSchemes(getSafeValue("alternativeSchemes", rows));
         component.setTitle(getSafeValue("title", rows));
-        component.setDescription(getSafeValue("description", rows));
+        component.setDescription(getSafeValue(DESCRIPTION, rows));
         component.setLabel(getSafeValue("label", rows));
-        component.setDeprecated(getSafeValue("deprecated", rows));
+        component.setDeprecated(getSafeValue(DEPRECATED, rows));
         component.setConsumerOnly(getSafeValue("consumerOnly", rows));
         component.setProducerOnly(getSafeValue("producerOnly", rows));
-        component.setJavaType(getSafeValue("javaType", rows));
+        component.setJavaType(getSafeValue(JAVA_TYPE, rows));
         component.setGroupId(getSafeValue("groupId", rows));
         component.setArtifactId(getSafeValue("artifactId", rows));
         component.setVersion(getSafeValue("version", rows));
@@ -61,12 +65,12 @@ public final class ModelHelper {
                 option.setGroup(getSafeValue("group", row));
                 option.setRequired(getSafeValue("required", row));
                 option.setType(getSafeValue("type", row));
-                option.setJavaType(getSafeValue("javaType", row));
+                option.setJavaType(getSafeValue(JAVA_TYPE, row));
                 option.setEnums(getSafeValue("enum", row));
-                option.setDeprecated(getSafeValue("deprecated", row));
+                option.setDeprecated(getSafeValue(DEPRECATED, row));
                 option.setSecret(getSafeValue("secret", row));
                 option.setDefaultValue(getSafeValue("defaultValue", row));
-                option.setDescription(getSafeValue("description", row));
+                option.setDescription(getSafeValue(DESCRIPTION, row));
                 component.addComponentOption(option);
             }
 
@@ -79,14 +83,14 @@ public final class ModelHelper {
                 option.setLabel(getSafeValue("label", row));
                 option.setRequired(getSafeValue("required", row));
                 option.setType(getSafeValue("type", row));
-                option.setJavaType(getSafeValue("javaType", row));
+                option.setJavaType(getSafeValue(JAVA_TYPE, row));
                 option.setEnums(getSafeValue("enum", row));
                 option.setPrefix(getSafeValue("prefix", row));
                 option.setMultiValue(getSafeValue("multiValue", row));
-                option.setDeprecated(getSafeValue("deprecated", row));
+                option.setDeprecated(getSafeValue(DEPRECATED, row));
                 option.setSecret(getSafeValue("secret", row));
                 option.setDefaultValue(getSafeValue("defaultValue", row));
-                option.setDescription(getSafeValue("description", row));
+                option.setDescription(getSafeValue(DESCRIPTION, row));
                 component.addEndpointOption(option);
             }
         }

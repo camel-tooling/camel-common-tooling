@@ -28,6 +28,7 @@ public interface CamelDiagnosticEndpointMessage<T> {
      *
      * @param endpointValidationResult - The validation result return from the {@link org.apache.camel.catalog.CamelCatalog} validator
      * @param valueObj - The key and value object validated.
+     * @return the error message
      */
     String getErrorMessage(EndpointValidationResult endpointValidationResult, T valueObj);
 
