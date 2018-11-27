@@ -21,166 +21,166 @@ import java.util.List;
 
 public class ComponentModel {
 
-    private String kind;
-    private String scheme;
-    private String syntax;
-    private String alternativeSyntax;
-    private String alternativeSchemes;
-    private String title;
-    private String description;
-    private String label;
-    private String deprecated;
-    private String consumerOnly;
-    private String producerOnly;
-    private String javaType;
-    private String groupId;
-    private String artifactId;
-    private String version;
-    private final List<ComponentOptionModel> componentOptions = new ArrayList<>();
-    private final List<EndpointOptionModel> endpointOptions = new ArrayList<>();
+	private String kind;
+	private String scheme;
+	private String syntax;
+	private String alternativeSyntax;
+	private String alternativeSchemes;
+	private String title;
+	private String description;
+	private String label;
+	private String deprecated;
+	private String consumerOnly;
+	private String producerOnly;
+	private String javaType;
+	private String groupId;
+	private String artifactId;
+	private String version;
+	private final List<ComponentOptionModel> componentOptions = new ArrayList<>();
+	private final List<EndpointOptionModel> endpointOptions = new ArrayList<>();
 
-    public String getKind() {
-        return kind;
-    }
+	public String getKind() {
+		return kind;
+	}
 
-    public void setKind(String kind) {
-        this.kind = kind;
-    }
+	public void setKind(String kind) {
+		this.kind = kind;
+	}
 
-    public String getScheme() {
-        return scheme;
-    }
+	public String getScheme() {
+		return scheme;
+	}
 
-    public void setScheme(String scheme) {
-        this.scheme = scheme;
-    }
+	public void setScheme(String scheme) {
+		this.scheme = scheme;
+	}
 
-    public String getSyntax() {
-        return syntax;
-    }
+	public String getSyntax() {
+		return syntax;
+	}
 
-    public void setSyntax(String syntax) {
-        this.syntax = syntax;
-    }
+	public void setSyntax(String syntax) {
+		this.syntax = syntax;
+	}
 
-    public String getAlternativeSyntax() {
-        return alternativeSyntax;
-    }
+	public String getAlternativeSyntax() {
+		return alternativeSyntax;
+	}
 
-    public void setAlternativeSyntax(String alternativeSyntax) {
-        this.alternativeSyntax = alternativeSyntax;
-    }
+	public void setAlternativeSyntax(String alternativeSyntax) {
+		this.alternativeSyntax = alternativeSyntax;
+	}
 
-    public String getAlternativeSchemes() {
-        return alternativeSchemes;
-    }
+	public String getAlternativeSchemes() {
+		return alternativeSchemes;
+	}
 
-    public void setAlternativeSchemes(String alternativeSchemes) {
-        this.alternativeSchemes = alternativeSchemes;
-    }
+	public void setAlternativeSchemes(String alternativeSchemes) {
+		this.alternativeSchemes = alternativeSchemes;
+	}
 
-    public String getTitle() {
-        return title;
-    }
+	public String getTitle() {
+		return title;
+	}
 
-    public void setTitle(String title) {
-        this.title = title;
-    }
+	public void setTitle(String title) {
+		this.title = title;
+	}
 
-    public String getDescription() {
-        return description;
-    }
+	public String getDescription() {
+		return description;
+	}
 
-    public void setDescription(String description) {
-        this.description = description;
-    }
+	public void setDescription(String description) {
+		this.description = description;
+	}
 
-    public String getLabel() {
-        return label;
-    }
+	public String getLabel() {
+		return label;
+	}
 
-    public void setLabel(String label) {
-        this.label = label;
-    }
+	public void setLabel(String label) {
+		this.label = label;
+	}
 
-    public String getDeprecated() {
-        return deprecated;
-    }
+	public String getDeprecated() {
+		return deprecated;
+	}
 
-    public void setDeprecated(String deprecated) {
-        this.deprecated = deprecated;
-    }
+	public void setDeprecated(String deprecated) {
+		this.deprecated = deprecated;
+	}
 
-    public String getConsumerOnly() {
-        return consumerOnly;
-    }
+	public String getConsumerOnly() {
+		return consumerOnly;
+	}
 
-    public void setConsumerOnly(String consumerOnly) {
-        this.consumerOnly = consumerOnly;
-    }
+	public void setConsumerOnly(String consumerOnly) {
+		this.consumerOnly = consumerOnly;
+	}
 
-    public String getProducerOnly() {
-        return producerOnly;
-    }
+	public String getProducerOnly() {
+		return producerOnly;
+	}
 
-    public void setProducerOnly(String producerOnly) {
-        this.producerOnly = producerOnly;
-    }
+	public void setProducerOnly(String producerOnly) {
+		this.producerOnly = producerOnly;
+	}
 
-    public String getJavaType() {
-        return javaType;
-    }
+	public String getJavaType() {
+		return javaType;
+	}
 
-    public void setJavaType(String javaType) {
-        this.javaType = javaType;
-    }
+	public void setJavaType(String javaType) {
+		this.javaType = javaType;
+	}
 
-    public String getGroupId() {
-        return groupId;
-    }
+	public String getGroupId() {
+		return groupId;
+	}
 
-    public void setGroupId(String groupId) {
-        this.groupId = groupId;
-    }
+	public void setGroupId(String groupId) {
+		this.groupId = groupId;
+	}
 
-    public String getArtifactId() {
-        return artifactId;
-    }
+	public String getArtifactId() {
+		return artifactId;
+	}
 
-    public void setArtifactId(String artifactId) {
-        this.artifactId = artifactId;
-    }
+	public void setArtifactId(String artifactId) {
+		this.artifactId = artifactId;
+	}
 
-    public String getVersion() {
-        return version;
-    }
+	public String getVersion() {
+		return version;
+	}
 
-    public void setVersion(String version) {
-        this.version = version;
-    }
+	public void setVersion(String version) {
+		this.version = version;
+	}
 
-    public List<ComponentOptionModel> getComponentOptions() {
-        return componentOptions;
-    }
+	public List<ComponentOptionModel> getComponentOptions() {
+		return componentOptions;
+	}
 
-    public void addComponentOption(ComponentOptionModel option) {
-        componentOptions.add(option);
-    }
+	public void addComponentOption(ComponentOptionModel option) {
+		componentOptions.add(option);
+	}
 
-    public List<EndpointOptionModel> getEndpointOptions() {
-        return endpointOptions;
-    }
+	public List<EndpointOptionModel> getEndpointOptions() {
+		return endpointOptions;
+	}
 
-    public void addEndpointOption(EndpointOptionModel option) {
-        endpointOptions.add(option);
-    }
+	public void addEndpointOption(EndpointOptionModel option) {
+		endpointOptions.add(option);
+	}
 
-    public ComponentOptionModel getComponentOption(String name) {
-        return componentOptions.stream().filter(o -> o.getName().equals(name)).findFirst().orElse(null);
-    }
+	public ComponentOptionModel getComponentOption(String name) {
+		return componentOptions.stream().filter(o -> o.getName().equals(name)).findFirst().orElse(null);
+	}
 
-    public EndpointOptionModel getEndpointOption(String name) {
-        return endpointOptions.stream().filter(o -> o.getName().equals(name)).findFirst().orElse(null);
-    }
+	public EndpointOptionModel getEndpointOption(String name) {
+		return endpointOptions.stream().filter(o -> o.getName().equals(name)).findFirst().orElse(null);
+	}
 
 }

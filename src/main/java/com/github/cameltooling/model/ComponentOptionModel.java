@@ -16,52 +16,52 @@
  */
 package com.github.cameltooling.model;
 
-public class ComponentOptionModel extends BaseOptionModel{
+public class ComponentOptionModel extends BaseOptionModel {
 
-    private String deprecated;
-    private String secret;
-    private String description;
-    private String defaultValue;
-    private String enums;
+	private String deprecated;
+	private String secret;
+	private String description;
+	private String defaultValue;
+	private String enums;
 
-    public String getDeprecated() {
-        return deprecated;
-    }
+	public String getDeprecated() {
+		return deprecated;
+	}
 
-    public void setDeprecated(String deprecated) {
-        this.deprecated = deprecated;
-    }
+	public void setDeprecated(String deprecated) {
+		this.deprecated = deprecated;
+	}
 
-    public String getSecret() {
-        return secret;
-    }
+	public String getSecret() {
+		return secret;
+	}
 
-    public void setSecret(String secret) {
-        this.secret = secret;
-    }
+	public void setSecret(String secret) {
+		this.secret = secret;
+	}
 
-    public String getDescription() {
-        return description;
-    }
+	public String getDescription() {
+		return description;
+	}
 
-    public void setDescription(String description) {
-        this.description = description;
-    }
+	public void setDescription(String description) {
+		this.description = description;
+	}
 
-    public String getDefaultValue() {
-        return defaultValue;
-    }
+	public String getDefaultValue() {
+		return defaultValue;
+	}
 
-    public void setDefaultValue(String defaultValue) {
-        this.defaultValue = defaultValue;
-    }
+	public void setDefaultValue(String defaultValue) {
+		this.defaultValue = defaultValue;
+	}
 
-    public String getEnums() {
-        return enums;
-    }
+	public String getEnums() {
+		return enums;
+	}
 
-    public void setEnums(String enums) {
-        this.enums = enums;
-    }
+	public void setEnums(String enums) {
+		this.enums = enums;
+	}
 
 }

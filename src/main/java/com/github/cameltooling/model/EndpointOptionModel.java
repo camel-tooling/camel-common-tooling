@@ -18,86 +18,85 @@ package com.github.cameltooling.model;
 
 public class EndpointOptionModel extends BaseOptionModel {
 
-    private String label;
-    private String enums;
-    private String prefix;
-    private String multiValue;
-    private String deprecated;
-    private String secret;
-    private String defaultValue;
-    private String description;
-    private String enumValues;
+	private String label;
+	private String enums;
+	private String prefix;
+	private String multiValue;
+	private String deprecated;
+	private String secret;
+	private String defaultValue;
+	private String description;
+	private String enumValues;
 
+	public String getLabel() {
+		return label;
+	}
 
-    public String getLabel() {
-        return label;
-    }
+	public void setLabel(String label) {
+		this.label = label;
+	}
 
-    public void setLabel(String label) {
-        this.label = label;
-    }
+	public String getEnums() {
+		return enums;
+	}
 
-    public String getEnums() {
-        return enums;
-    }
+	public void setEnums(String enums) {
+		this.enums = enums;
+	}
 
-    public void setEnums(String enums) {
-        this.enums = enums;
-    }
+	public String getPrefix() {
+		return prefix;
+	}
 
-    public String getPrefix() {
-        return prefix;
-    }
+	public void setPrefix(String prefix) {
+		this.prefix = prefix;
+	}
 
-    public void setPrefix(String prefix) {
-        this.prefix = prefix;
-    }
+	public String getMultiValue() {
+		return multiValue;
+	}
 
-    public String getMultiValue() {
-        return multiValue;
-    }
+	public void setMultiValue(String multiValue) {
+		this.multiValue = multiValue;
+	}
 
-    public void setMultiValue(String multiValue) {
-        this.multiValue = multiValue;
-    }
+	public String getDeprecated() {
+		return deprecated;
+	}
 
-    public String getDeprecated() {
-        return deprecated;
-    }
+	public void setDeprecated(String deprecated) {
+		this.deprecated = deprecated;
+	}
 
-    public void setDeprecated(String deprecated) {
-        this.deprecated = deprecated;
-    }
+	public String getSecret() {
+		return secret;
+	}
 
-    public String getSecret() {
-        return secret;
-    }
+	public void setSecret(String secret) {
+		this.secret = secret;
+	}
 
-    public void setSecret(String secret) {
-        this.secret = secret;
-    }
+	public String getDefaultValue() {
+		return defaultValue;
+	}
 
-    public String getDefaultValue() {
-        return defaultValue;
-    }
+	public void setDefaultValue(String defaultValue) {
+		this.defaultValue = defaultValue;
+	}
 
-    public void setDefaultValue(String defaultValue) {
-        this.defaultValue = defaultValue;
-    }
+	public String getDescription() {
+		return description;
+	}
 
-    public String getDescription() {
-        return description;
-    }
+	public void setDescription(String description) {
+		this.description = description;
+	}
 
-    public void setDescription(String description) {
-        this.description = description;
-    }
+	public String getEnumValues() {
+		return enumValues;
+	}
 
-    public String getEnumValues() {
-        return enumValues;
-    }
-
-    public void setEnumValues(String enumValues) {
-        this.enumValues = enumValues;
-    }
+	public void setEnumValues(String enumValues) {
+		this.enumValues = enumValues;
+	}
 }
